@@ -16,27 +16,27 @@ async function checkweather(city)//checkweater fun m city pass ki to use await f
     document.querySelector(".wind").innerHTML = data.wind.speed + " km/hr";
 if(data.weather[0].main=="Clouds")
 {
-    weatherIcon.src = "/images weather/clouds.png"
+    weatherIcon.src = "images weather/clouds.png"
 }
 else if(data.weather[0].main=="Clear")
     {
-        weatherIcon.src = "/images weather/clear.png"
+        weatherIcon.src = "images weather/clear.png"
     }
     else if(data.weather[0].main=="Drizzle")
         {
-            weatherIcon.src = "/images weather/drizzle.png"
+            weatherIcon.src = "images weather/drizzle.png"
         }
         else if(data.weather[0].main=="Mist")
             {
-                weatherIcon.src ="/images weather/mist.png"
+                weatherIcon.src ="images weather/mist.png"
             }
             else if(data.weather[0].main=="Rain") 
                 {
-                weatherIcon.src ="/images weather/rain.png"  
+                weatherIcon.src ="images weather/rain.png"  
                 }
                 else if(data.weather[0].main=="Snow")
                     {
-                        weatherIcon.src ="/images weather/snow.png"   
+                        weatherIcon.src ="images weather/snow.png"   
                     }
                     //in css we block the display of entire design but in js we again tell than what we write inn css will not get block it .   
 document.querySelector(".weather").style.display ="block"    
