@@ -47,3 +47,15 @@ searchBtn.addEventListener("click", ()=>{
 
     checkweather(searchBox.value);
 })
+
+searchBox.addEventListener("keydown",function (event){
+    if (event.key ==='Enter'){
+        event.preventDefault();
+
+       // searchBtn.textContent = ${searchBox.value};
+       // searchBox.value='';
+       checkweather(searchBox.value);
+    };
+
+    
+});
